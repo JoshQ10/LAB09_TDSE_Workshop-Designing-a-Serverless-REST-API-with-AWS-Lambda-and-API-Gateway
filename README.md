@@ -445,32 +445,9 @@ Salida completa en [docs/examples/architecture-b-requests.md](docs/examples/arch
 ## 8. Desarrollo asistido por IA
 
 Se usó **Claude Code** (Claude Opus) como asistente: diseño del contrato, código Java, pruebas, scripts de despliegue
-con AWS CLI, ejecución en AWS CloudShell y pruebas con curl. El asistente trabajó a partir del enunciado completo del
-taller; cada decisión se revisó contra el comportamiento real desplegado (las respuestas de esta sección se basan en
+con AWS CLI, ejecución en AWS CloudShell y pruebas con curl. El asistente trabajó a partir de instrucciones claras teniendo ya una arquitectura clara desde antes;
+cada decisión se revisó contra el comportamiento real desplegado (las respuestas de esta sección se basan en
 lo que se observó, no solo en lo que el agente propuso).
-
-Prompt de referencia usado para la parte de proxy (versión mejorada del sugerido en el taller):
-
-```
-Tengo una aplicación Java 17 para AWS Lambda que implementa un API de pedidos. La lógica está en
-OrderService (Java puro, sin dependencias de AWS) y ya existe una arquitectura no-proxy con plantillas
-de mapeo en API Gateway.
-
-Quiero exponer la misma lógica con integración Lambda proxy:
-  POST /orders, GET /orders/{id}, GET /orders?customerId={customerId}
-
-Restricciones:
-- OrderService y el dominio no pueden depender de clases de AWS ni de HTTP.
-- Los errores deben usar {"error": "...", "message": "..."} con 400/404/500.
-- El comportamiento HTTP debe poder probarse con JUnit sin desplegar.
-
-Antes de generar código:
-1. propón la arquitectura;
-2. identifica qué archivos existentes cambian;
-3. identifica las clases nuevas;
-4. explica dónde quedarán las responsabilidades HTTP y por qué.
-No implementes nada hasta explicar la arquitectura.
-```
 
 ### Crítica de las decisiones del agente
 

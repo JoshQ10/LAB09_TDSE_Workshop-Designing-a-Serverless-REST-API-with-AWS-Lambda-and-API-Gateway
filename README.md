@@ -727,17 +727,3 @@ devuelto como `errorMessage`:
 **6. Extensión DELETE** → `204 No Content`, luego `404` al repetir el borrado y al consultar el pedido:
 
 ![DELETE 204 y 404](docs/evidence/07-delete-204-404.png)
-
-### Evidencias previas
-
-Pruebas API funcional conectada a la Lambda:
-
-<img width="1096" height="770" alt="image" src="https://github.com/user-attachments/assets/870dd0f2-680a-4bba-a034-2356ed630fe4" />
-
-Prueba de cuerpo de plantilla con value = 14:
-
-<img width="1037" height="753" alt="image" src="https://github.com/user-attachments/assets/eca2766a-eb9d-4bc4-9e5f-cf9db32618e9" />
-
-API funcional con link:
-
-<img width="937" height="225" alt="image" src="https://github.com/user-attachments/assets/9df9c780-0624-4d5d-bcbf-3510a6a9e3ad" />

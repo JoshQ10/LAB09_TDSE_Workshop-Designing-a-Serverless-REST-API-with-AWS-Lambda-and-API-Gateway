@@ -1,4 +1,5 @@
-# LABO9_TDSE_Hello-world-Introduction-to-Microservices-with-Java-AWS-Lambda-and-API-Gateway
+# LAB09_TDSE_Workshop-Designing-a-Serverless-REST-API-with-AWS-Lambda-and-API-Gateway
+
 
 Evidencias:
 

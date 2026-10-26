@@ -1,0 +1,7 @@
+#set($raw = $input.path('$.errorMessage'))
+#set($separator = $raw.indexOf(': '))
+#set($start = $separator + 2)
+{
+  "error": "$raw.substring(0, $separator)",
+  "message": "$util.escapeJavaScript($raw.substring($start))"
+}

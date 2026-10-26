@@ -1,0 +1,57 @@
+{
+  "resource": "/orders/{id}",
+  "path": "/orders/ORD-001",
+  "httpMethod": "GET",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "curl/8.17.0"
+  },
+  "multiValueHeaders": {
+    "Accept": ["application/json"],
+    "User-Agent": ["curl/8.17.0"]
+  },
+  "queryStringParameters": {
+    "fields": "all"
+  },
+  "multiValueQueryStringParameters": {
+    "fields": ["all"]
+  },
+  "pathParameters": {
+    "id": "ORD-001"
+  },
+  "stageVariables": null,
+  "requestContext": {
+    "resourceId": "ins6un",
+    "resourcePath": "/orders/{id}",
+    "httpMethod": "GET",
+    "extendedRequestId": "F3vT-FppIAMFiQg=",
+    "requestTime": "26/Oct/2026:21:27:14 +0000",
+    "path": "/orders/{id}",
+    "accountId": "<ACCOUNT_ID>",
+    "protocol": "HTTP/1.1",
+    "stage": "test-invoke-stage",
+    "domainPrefix": "testPrefix",
+    "requestTimeEpoch": 1793050034554,
+    "requestId": "5c3fa71f-9ded-4e04-827a-473c363780e0",
+    "identity": {
+      "cognitoIdentityPoolId": null,
+      "cognitoIdentityId": null,
+      "apiKey": "test-invoke-api-key",
+      "principalOrgId": null,
+      "cognitoAuthenticationType": null,
+      "userArn": "arn:aws:sts::<ACCOUNT_ID>:assumed-role/voclabs/<USER>",
+      "apiKeyId": "test-invoke-api-key-id",
+      "userAgent": "aws-cli/2.38.4 (CloudShell) apigateway.test-invoke-method",
+      "accountId": "<ACCOUNT_ID>",
+      "caller": "<ROLE_ID>:<USER>",
+      "sourceIp": "test-invoke-source-ip",
+      "accessKey": "<ACCESS_KEY>",
+      "cognitoAuthenticationProvider": null,
+      "user": "<ROLE_ID>:<USER>"
+    },
+    "domainName": "testPrefix.testDomainName",
+    "apiId": "on9zokq1d5"
+  },
+  "body": null,
+  "isBase64Encoded": false
+}

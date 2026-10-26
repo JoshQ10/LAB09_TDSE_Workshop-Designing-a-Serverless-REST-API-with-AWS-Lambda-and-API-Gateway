@@ -1,0 +1,6 @@
+#set($order = $input.path('$'))
+{
+  "customerId": "$util.escapeJavaScript($order.customerId)",
+  "product": "$util.escapeJavaScript($order.product)",
+  "quantity": $order.quantity
+}

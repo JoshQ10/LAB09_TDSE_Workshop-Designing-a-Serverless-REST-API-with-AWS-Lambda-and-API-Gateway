@@ -693,6 +693,12 @@ curl -i -X DELETE "$API/orders/ORD-002"                                  # 204
 curl -i -X DELETE "$API/orders/ORD-002"                                  # 404
 ```
 
+## Video
+
+https://youtu.be/mAqICbLFZ1Y
+
+
+
 ## Evidencias
 
 Funciones Lambda desplegadas (4 de la arquitectura A y la Lambda proxy de la arquitectura B, runtime Java 17):
